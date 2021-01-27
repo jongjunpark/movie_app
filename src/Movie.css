@@ -1,0 +1,57 @@
+/* reset */
+p {
+    margin: 0;
+}
+/* reset-end */
+.movie {
+    width: 550px;
+    height: 290px;
+    margin: 20px 10px;
+    padding: 20px;
+    position: relative;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.movie_poster_box {
+    width: 35%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.movie_detail_box {
+    width: 60%;
+}
+
+.movie_poster_box .movie_poster {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.movie_poster_box .movie_poster:hover {
+    top: -50px;
+}
+
+.movie_detail_box .movie_title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.movie_genres_box {
+    margin: 5px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie_genres_box .movie_genres {
+    margin: 5px 5px 0 0;
+    background-color: rgb(142, 204, 255);
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-family: 'BMJUA'; 
+}

@@ -13,6 +13,10 @@ class App extends Component {
 
   _renderMovies = () => {
     const movies = this.state.movies.map((movie, index) => {
+      console.log(movie.synopsis.length)
+      if (movie.synopsis.length > 400) {
+        movie.synopsis = movie.synopsis.substring(0,400) + '...'
+      }
       return <Movie 
         title={movie.title_english} 
         poster={movie.medium_cover_image} 
